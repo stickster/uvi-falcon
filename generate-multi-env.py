@@ -50,8 +50,5 @@ for i in steps:
                                "DestLevel": i[1],
                                "Curve": "0"}))
 
-#et.dump(root)
-
 xmlstr = minidom.parseString(etree.tostring(root)).toprettyxml(indent="   ")
-#et.write(sys.stdout, encoding='unicode')
 sys.stdout.write(xmlstr)
