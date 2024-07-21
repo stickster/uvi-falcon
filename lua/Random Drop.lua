@@ -7,7 +7,7 @@
 
 Label{"Drop events random based on probability setting", align = "centred", width = 710}
 
-skipKnob = Knob{"Skip", 0, 0, 1, false}
+skipKnob = Knob{"Skip", 0, 0, 1, false, unit = Unit.PercentNormalized}
 
 function onNote(e)
     local myRandom = math.random()
